@@ -16,6 +16,11 @@ const Background = () => {
  
   const handleInput = (inputValue) => {
     let incomingInput = "";
+    if (inputValue === "π") {
+      setCurrentInput(Math.PI.toString());
+      setPrevInput(Math.PI.toString());
+      return;
+    }
     if (currentInput == "0" && operator == "") {
       
       setCurrentInput(inputValue);
