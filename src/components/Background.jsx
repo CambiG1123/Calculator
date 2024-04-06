@@ -32,7 +32,7 @@ const Background = () => {
       setNewInput(incomingInput);
       setPrevInput(incomingInput);
     }
-    if (currentInput == "0" && operator != "") {
+    if (newInput == "0" && operator != "") {
       // newInput += currentInput;
 
       incomingInput += inputValue;
@@ -75,7 +75,7 @@ const Background = () => {
     }
     else if (["+", "-", "*", "/",'√'].includes(type)) {
       setPrevInput(currentInput);
-      setCurrentInput("0");
+      setNewInput("0");
       setCount(count + 1);
       if (operator !== "") {
         
